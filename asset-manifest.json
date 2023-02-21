@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wine-store/static/css/main.a7598fab.css",
+    "main.js": "/wine-store/static/js/main.2210ee7c.js",
+    "index.html": "/wine-store/index.html",
+    "main.a7598fab.css.map": "/wine-store/static/css/main.a7598fab.css.map",
+    "main.2210ee7c.js.map": "/wine-store/static/js/main.2210ee7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7598fab.css",
+    "static/js/main.2210ee7c.js"
+  ]
+}

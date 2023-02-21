@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*, *::before, *::after { margin:0; padding: 0; box-sizing: inherit;}
+html { scroll-behavior: smooth}
+
+body {background-color:rgb(0, 0, 0);}
+
+/* HEADER
+********************************* */
+
+#topheader {
+    background-color: black;
+    font-family: 'Vogue';
+    font-size: 30px;
+    position: sticky;
+    padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header > h1,
+header > p {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header > h1 {
+    font-size: calc(30m + 2vw);
+    font-weight: 700;
+    text-align: center;
+    color: red !important;
+    filter: blur(0.4px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Nav
+********************************* */
+button {
+    padding: 10px 50px;
+    font-display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 10px 20px 50px solid white;
+    border-color: rgb(0, 0, 0);
+    background-color: black;
+    border-width: 25px;
+    font-size: 30px;
+    font-family: 'Futura';
+    color: gold;
 }
 
-.App-link {
-  color: #61dafb;
+.wine-button-flexbox{
+    background-color: rgb(0, 0, 0);
+    border: solid 10px rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button-one{
+    background-color: rgb(50, 50, 50);
+    width: 45%;
+    text-align: center;
+    /* border-radius: 3%; */
+}
+.button-two{
+    background-color: rgb(50, 50, 50);
+    width: 45%;
+    text-align: center;
+    /* border-radius: 3%; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Listing
+********************************* */
+div > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Listing card
+********************************* */
+.card {
+    flex: 1 0 250px;
+    padding: 5px;
+    margin: 7px;
+    border: 5px solid rgb(37, 37, 37);
+    background-color: rgb(0, 0, 0);
+    font-family: '1942 Report';
+    color: wheat;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter:drop-shadow(0 0 50px gold);
+}
+
+.card img{
+    width: 50%;
+}
+
+.card h3{
+    font-weight: 700;
 }
